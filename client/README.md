@@ -1,9 +1,11 @@
 # Dating App - Angular Frontend
 
 ## Overview
+
 Frontend application built with Angular 21 for the Dating App.
 
 ## Technologies
+
 - Angular 21
 - TypeScript
 - Tailwind CSS v4
@@ -11,6 +13,7 @@ Frontend application built with Angular 21 for the Dating App.
 - Angular Signals (new reactivity system)
 
 ## Project Structure
+
 ```
 client/
 ├── src/
@@ -31,22 +34,27 @@ client/
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js 18+
 - npm or yarn
 - Angular CLI 21
 
 ### Setup
+
 1. Navigate to client folder
+
 ```bash
 cd client
 ```
 
 2. Install dependencies
+
 ```bash
 npm install
 ```
 
 3. Start development server
+
 ```bash
 ng serve
 ```
@@ -54,16 +62,19 @@ ng serve
 App will be available at `http://localhost:4200`
 
 ### HTTPS Development
+
 For HTTPS development (recommended for production-like testing):
 
 1. Install mkcert
 2. Generate certificates
+
 ```bash
 cd ssl
 mkcert localhost
 ```
 
 3. Start with SSL
+
 ```bash
 ng serve --ssl --ssl-cert ssl/localhost.pem --ssl-key ssl/localhost-key.pem
 ```
@@ -71,12 +82,14 @@ ng serve --ssl --ssl-cert ssl/localhost.pem --ssl-key ssl/localhost-key.pem
 ## Features
 
 ### Current Features
+
 - Member listing with data from API
 - Responsive design with Tailwind CSS
 - Angular Signals for reactive state management
 - HTTP client for API communication
 
 ### Planned Features
+
 - User authentication
 - Member profiles
 - Real-time messaging
@@ -85,16 +98,19 @@ ng serve --ssl --ssl-cert ssl/localhost.pem --ssl-key ssl/localhost-key.pem
 ## Development
 
 ### Code Style
+
 - Uses Prettier for code formatting
 - ESLint for linting
 - Angular CLI for code generation
 
 ### Building for Production
+
 ```bash
 ng build --configuration production
 ```
 
 ### Testing
+
 ```bash
 ng test
 ```
@@ -102,16 +118,19 @@ ng test
 ## Configuration
 
 ### Tailwind CSS
+
 - Configured with PostCSS
 - Content paths include all TypeScript and HTML files
 - Custom CSS in `styles.css`
 
 ### API Integration
+
 - HttpClient configured in app.config.ts
 - CORS enabled on backend
 - Error handling with RxJS operators
 
 ## Scripts
+
 - `npm start` - Start development server
 - `npm run build` - Build for production
 - `npm test` - Run tests
